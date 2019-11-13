@@ -4,8 +4,14 @@
   "description": "this is a shopping list app built with the MERN stack",
   "main": "server.js",
   "scripts": {
+    "client-install": "yarn install --prefix client",
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "client": "yarn --cwd client/ start",
+    "server": "nodemon server.js",
+    
+    
+"dev": "concurrently \"yarn run server\" \"yarn run client\""
+
   },
   "author": {
     "name": "Cliff Gor"

@@ -8,10 +8,7 @@
     "start": "node server.js",
     "client": "yarn --cwd client/ start",
     "server": "nodemon server.js",
-    
-    
-"dev": "concurrently \"yarn run server\" \"yarn run client\""
-
+    "dev": "concurrently \"yarn run server\" \"yarn run client\""
   },
   "author": {
     "name": "Cliff Gor"
@@ -22,6 +19,7 @@
     "concurrently": "^5.0.0",
     "express": "^4.17.1",
     "mongoose": "^5.7.9"
+   
   },
   "devDependencies": {
     "nodemon": "^1.19.4"

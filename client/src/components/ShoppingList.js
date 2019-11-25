@@ -5,11 +5,13 @@ import uuid from 'uuid';
 import { connect } from 'react-redux';
 import { getItems }  from '../actions/itemActions';
 import PropTypes from 'prop-types';
-import { S } from 'xmlchars/xml/1.0/ed5';
+
 
 
 class ShoppingList extends Component {
-   
+   componentDidMount(){
+       this.props.getItems();
+   }
 
     render () {
         const { items } = this.state;
@@ -63,10 +65,10 @@ class ShoppingList extends Component {
 
 }
 
-ShoppingList.PropTypes = {
+ShoppingList.propTypes = {
     getItems: PropTypes.func.isRequired,
     item: PropTypes.object.isRequired
-}
+};
 
 const mapStateToProps = (state) => ({
     item:state.item

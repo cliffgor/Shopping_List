@@ -6,7 +6,7 @@ const initialState = {
         { id: uuid(), name: 'Eggs'},
             { id: uuid(), name: 'Bread'},
             { id: uuid(), name: 'Ugali'},
-            { id: uuid(), name: 'Fish'}
+            { id: uuid(), name: 'Matoke'}
     ]
 }
 

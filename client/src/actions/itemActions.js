@@ -8,9 +8,10 @@ export const getItems = () => {
 };
 
 // Delete Item Actions
-export const deleteItems = (id) => {
+export const deleteItem = id => {
     return{
         type: DELETE_ITEM,
         payload: id
     };
 };
+  
